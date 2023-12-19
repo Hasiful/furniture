@@ -1,0 +1,28 @@
+/* ================================= Border Color Css Start =========================== */
+.border {
+    &--base {
+        border-color: var(--base) !important;
+    }
+    &--primary {
+        border-color: hsl(var(--primary)) !important;
+    }
+    &--secondary {
+        border-color: hsl(var(--secondary)) !important;
+    }
+    &--success {
+        border-color: hsl(var(--success)) !important;
+    }
+    &--danger {
+        border-color: hsl(var(--danger)) !important;
+    }
+    &--warning {
+        border-color: hsl(var(--warning)) !important;
+    }
+    &--info {
+        border-color: hsl(var(--info)) !important;
+    }
+    &--dark {
+        border-color: hsl(var(--dark)) !important;
+    }
+}
+/* ================================= Border Color Css End =========================== */

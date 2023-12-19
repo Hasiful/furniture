@@ -1,0 +1,47 @@
+/* ================================= Modal Css Start =========================== */
+.custom--modal {
+    &.modal {
+        background-color: hsl(var(--black)/.45);
+    }
+    .modal-header {
+        border-bottom: 1px solid hsl(var(--border-color));
+        padding: 16px;
+    }
+    .modal-content {
+        background-color:var(--white);
+        border-radius: 10px !important;
+    }
+
+    .btn-close {
+        transition: .2s linear;
+        &:focus {
+            box-shadow: none;
+        }
+        &:hover {
+            background-color: hsl(var(--black)/.08);
+            border-radius: 50%;
+        }
+    }
+
+    .modal-body {
+        padding: 16px;
+        background-size: 10px;
+    }
+    .modal-icon i {
+        font-size: 2rem; // 32px
+        color: hsl(var(--base));
+        border: 3px solid hsl(var(--base));
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+    .modal-footer {
+        @extend .modal-header;    
+        border-top: 1px solid hsl(var(--border-color));
+    }
+}
+/* ================================= Modal Css End =========================== */
+

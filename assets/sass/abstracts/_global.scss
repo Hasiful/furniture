@@ -1,0 +1,38 @@
+
+/* ====================== Section Heading ==================== */
+.section-heading {
+  text-align: center;
+  margin-bottom: 50px;
+  @include lg-screen {
+    margin-bottom: 40px;
+  }
+  @include md-screen {
+    margin-bottom: 30px;
+  }
+  &__title {
+    position: relative;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  &__desc {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  // Style left
+  &.style-left {
+    text-align: left;
+    .section-heading {
+      &__title {
+        &::before {
+          left: 0;
+          transform: translateX(0);
+        }
+      }
+      &__desc {
+        margin-left: 0;
+      }
+    }
+  }
+}
+/* ====================== Section Heading En d==================== */

@@ -1,0 +1,14 @@
+/* ================================= Start Rating Css Start =========================== */
+.rating-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    &__item {
+        padding: 0 1px;
+        color: goldenrod;
+    }
+    &__text {
+        color: var(--body-color);
+    }
+}
+/* ================================= Start Rating Css End =========================== */

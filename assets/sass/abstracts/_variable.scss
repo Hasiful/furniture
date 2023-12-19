@@ -1,0 +1,35 @@
+/* Font Family*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* ========================= Css Variables Start ======================== */
+  :root {    
+    /* Font Family */
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Roboto Slab', serif;
+
+     // White Color 
+     --white: #FFFFFF;
+    --light: #303030;
+    
+    // Black Color  
+    --black: #000;
+    
+    --heading-color: var(--base-two);
+    --body-color: var(--light);
+    --border-color: 0 0% 88%;
+    --section-bg: 208 100% 97%;
+
+   /* ================================ Box Shadow Start =============================== */
+    // Header Box shadow
+    --header-box-shadow: 0px -1px 15px 3px hsl(var(--black) /.3); 
+   // Mobile bottom fix menu box shadow 
+    --mobile-box-shadow: 0px -1px 5px 0px hsl(var(--black) /.92);
+    // Card box shadow
+    --box-shadow: 0px 2px 15px hsl(var(--black) /.05);
+    /* ================================ Box Shadow End =============================== */
+    
+    // --base: #0ca59d;
+    --base: rgb(118, 146, 60);
+    --base-two:  rgb(32 58 64);
+    --dark: #232e35;
+  }

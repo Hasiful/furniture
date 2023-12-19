@@ -1,0 +1,285 @@
+/* ================ Top Header Start Here ================ */
+.header-top {
+    padding: 10px 0px;
+    position: relative;
+    z-index: 9;
+
+    &__right{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        .icon{
+            font-size: 24px;
+            cursor: pointer;
+            display: flex;
+            color: var(--dark);
+        }
+    }
+
+    .wishlist{
+        position: relative;
+
+        &__count{
+            position: absolute;
+            height: 16px;
+            width: 16px;
+            background-color: var(--base);
+            color: var(--white);
+            border-radius: 50%;
+            display: grid;
+            place-content: center;
+            font-size: 10px;
+            top: -2px;
+            right: -7px;
+        }
+    }
+}
+
+.header-search{
+    position: relative;
+    &__wrapper {
+        position: absolute;
+        width: 700px;
+        right: 0px;
+        top: -20px;
+        background-color: var(--white);
+        padding: 20px;
+        border-radius: 12px;
+        transition: all linear 0.3s;
+        box-shadow: 0px 5px 30px rgb(0 0 0 / 10%);
+        visibility: hidden;
+        opacity: 0;
+        transform: scaleY(0);
+
+        &.show{
+            top: 0px;
+            visibility: visible;
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+}
+
+.search_inner{
+    height: 40px;
+    position: relative;
+    
+    .form--control{
+        height: 100%;
+        border: 1px solid var(--base);
+        color: var(--dark);
+        padding: 0px 15px;
+        padding-right: 36px;
+
+        &::placeholder{
+            color: var(--light);
+        }
+    }
+
+    &__button{
+        color: var(--base);
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 36px;
+        font-size: 20px;
+    }
+}
+
+
+
+.user-info {
+    position: relative;
+    text-align: center;
+
+    &__button {
+        position: relative;
+        padding-right: 20px;
+
+        &::before {
+            position: absolute;
+            content: "\f107";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--black);
+            @extend .fs-14;
+            pointer-events: none;
+        }
+    }
+
+    &__name{
+        color: var(--black);
+    }
+
+    .user-info-dropdown {
+        border-radius: 10px;
+        overflow: hidden;
+        transition: 0.25s linear;
+        background-color: var(--white);
+        box-shadow: 0px 5px 25px rgb(0 0 0 / 10%);
+        width: 200px;
+        position: absolute;
+        left: 0;
+        z-index: 999;
+        top: 100%;
+        margin-top: 15px;
+        padding: 15px;
+        transform: scale(.95);
+        visibility: hidden;
+        opacity: 0;
+        border: 1px solid hsl(var(--black)/0.15);
+
+        &.show {
+            visibility: visible;
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        @include md-screen {
+            transform: unset !important;
+            top: 43px !important;
+        }
+
+        &__item {
+            &:last-child {
+                .user-info-dropdown__link {
+                    border-bottom: 0 !important;
+                }
+            }
+        }
+
+        &__link {
+            padding: 8px 16px !important;
+            color: #5d7387 !important;
+            margin-left: 0 !important;
+            width: 100%;
+            font-weight: 600;
+            text-align: left;
+            @extend .fs-15;
+            border-radius: 5px;
+
+            &.active {
+                background-color: var(--base);
+            }
+
+            &:hover {
+                background-color: hsl(var(--base)/.08);
+                color: var(--base)!important;
+            }
+
+            .icon {
+                margin-right: 8px;
+            }
+        }
+    }
+
+    &__thumb {
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+    &__name {
+        color: var(--black);
+        margin-left: 10px;
+        @extend .fs-15;
+    }
+}
+
+.top-header-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @include md-screen {
+        justify-content: center;
+    }
+}
+
+/* Login Registration */
+.login-registration-list {
+    margin: 0 -10px;
+    padding-right: 20px;
+
+    @include md-screen {
+        padding-right: 0;
+    }
+
+    &__item {
+        color: var(--white);
+        padding: 0 10px;
+        position: relative;
+
+        &:last-child::before {
+            display: none;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 1px;
+            height: 12px;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: hsl(var(--white)/.5);
+        }
+    }
+
+    &__icon {
+        color: hsl(var(--base));
+        margin-right: 10px;
+        @extend .fs-16;
+    }
+
+    &__link {
+        color: var(--white);
+        font-weight: 400;
+        font-family: var(--body-font);
+
+        @include msm-screen {
+            @include fs-15;
+        }
+
+        &:hover {
+            color: hsl(var(--base));
+
+            .login-registration-list__icon {
+                color: var(--white);
+            }
+
+            @include md-screen {
+                color: hsl(var(--base));
+            }
+        }
+    }
+}
+
+/* Language Box */
+.language-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .select {
+        color: var(--white);
+        background-color: transparent;
+        border: 1px solid hsl(var(--white)/0.4);
+        padding: 5px 8px;
+        @extend .fs-15;
+        font-weight: 400;
+        border-radius: 5px;
+
+        option {
+            background-color: var(--black);
+        }
+    }
+}
+
+/* ================ Top Header End Here ================ */
