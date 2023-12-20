@@ -1,7 +1,7 @@
 /* ================================= Pagination Css Start =========================== */
 .pagination {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 56px;
     @include lg-screen {
         margin-top: 48px;
@@ -21,7 +21,7 @@
             }
         }
         .page-link {
-            border: 1px solid hsl(var(--black) / .15);
+            border: 1px solid rgba(0, 0, 0, 0.251);
             margin: 0 5px;
             border-radius: 50%;
             height: 40px;

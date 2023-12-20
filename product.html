@@ -210,7 +210,124 @@
 
                     <p class="product-brand"> <strong>Brand</strong> New Arrivals from Rowe</p>
 
-                    <button class="btn btn--base mt-5">Get A Quote</button>
+                    <button class="btn btn--base mt-5" data-bs-target="#staticBackdrop" data-bs-toggle="modal">Get A
+                        Quote</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal product-modal custom--modal fade" id="staticBackdrop" data-bs-backdrop="static"
+        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Request Information</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="account">
+                        <div class="account-form">
+                            <form action="#" method="POST">
+
+                                <div class=" form-group">
+                                    <label for="email" class="form--label">First Name</label>
+                                    <input type="text" class="form--control" id="email">
+                                </div>
+
+                                <div class=" form-group">
+                                    <label for="" class="form--label">Last Name</label>
+                                    <input type="text" class="form--control" id="">
+                                </div>
+
+                                <div class=" form-group">
+                                    <label for="" class="form--label">Email</label>
+                                    <input type="text" class="form--control" id="">
+                                </div>
+
+                                <div class=" form-group">
+                                    <label for="" class="form--label">Phone</label>
+                                    <input type="text" class="form--control" id="">
+                                </div>
+
+                                <div class=" form-group">
+                                    <label for="" class="form--label">City</label>
+                                    <input type="text" class="form--control" id="">
+                                </div>
+
+                                <div class=" form-group">
+                                    <label for="" class="form--label">State</label>
+                                    <input type="text" class="form--control" id="">
+                                </div>
+
+                                <div class=" form-group">
+                                    <label for="" class="form--label">Postal Code</label>
+                                    <input type="text" class="form--control" id="">
+                                </div>
+
+                                <div class=" form-group">
+                                    <label for="" class="form--label">Comments</label>
+                                    <textarea name="" id="" class="form--control"></textarea>
+                                </div>
+
+                                <div class="form--check form-group">
+                                    <input class="form-check-input" type="checkbox" value="" id="remember">
+                                    <label class="form-check-label" for="remember">Remember
+                                        me </label>
+                                </div>
+                                <button type="submit" class="btn btn--base w-100">Sign
+                                    In</button>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="prodtc-details-table pb-60">
+        <div class="container">
+            <div id="pricing" class="tour_blockbody collapse show" style="">
+                <div class="pricing_tab mt-3">
+                    <!-- nav btn -->
+                    <div class="theme_search_form_tabbtn">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#Standard" type="button"
+                                    aria-selected="false" role="tab" tabindex="-1">
+                                    <i class="fa-solid fa-standard-definition"></i>Item Description</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#Deluxe"
+                                    type="button" aria-selected="true" role="tab"><i
+                                        class="fa-solid fa-highlighter-line"></i>Other Details</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade" id="Standard" role="tabpanel">
+                            <ul class="p-3">
+                                <li class="mb-2"><strong>Product Description DIMENSIONS</strong></li>
+                                <li class="mb-2">Length: 89"</li>
+                                <li class="mb-2">Depth: 39"</li>
+                                <li class="mb-2">Height: 36"</li>
+                                <li class="mb-2">Seat Height: 21"</li>
+                                <li class="mb-2">Seat Depth: 24"</li>
+                                <li class="mb-2">Arm Height: 26"</li>
+                                <li class="mb-2">Inside Width: 79"</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade active show" id="Deluxe" role="tabpanel">
+                            <ul class="p-3">
+                                <li class="mb-2"><strong>Availability</strong></li>
+                                <li class="mb-2"> <strong>Description</strong> *Everleigh 89” Two Cushion Sofa</li>
+                                <li class="mb-2"> <strong>Type</strong> Sofas</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

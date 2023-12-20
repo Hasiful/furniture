@@ -1,5 +1,7 @@
 /* Compatibility styles for frameworks like bootstrap, foundation e.t.c */
-.xzoom-source img, .xzoom-preview img, .xzoom-lens img {
+.xzoom-source img,
+.xzoom-preview img,
+.xzoom-lens img {
   display: block;
   max-width: none;
   max-height: none;
@@ -9,10 +11,11 @@
   transition: none;
   width: auto;
 }
+
 /* --------------- */
 
 /* xZoom Styles below */
-.xzoom-container { 
+.xzoom-container {
   display: inline-block;
 }
 
@@ -21,8 +24,8 @@
   margin-bottom: 10px;
 }
 
-.xzoom { 
- border: 1px solid var(--border-color);
+.xzoom {
+  border: 1px solid var(--border-color);
 }
 
 /* Thumbs */
@@ -32,12 +35,15 @@
   height: 63px;
 }
 
-.xzoom-source, .xzoom-hidden {
+.xzoom-source,
+.xzoom-hidden {
   display: block;
   position: static;
   float: none;
   clear: both;
 }
+
+
 
 /* Everything out of border is hidden */
 .xzoom-hidden {
@@ -47,14 +53,24 @@
 /* Preview */
 .xzoom-preview {
   border: 1px solid #888;
-  background: #2f4f4f;
-  box-shadow: -0px -0px 10px rgba(0,0,0,0.50);
+  background: #fff;
+  box-shadow: -0px -0px 10px rgba(0, 0, 0, 0.50);
+}
+
+.xzoom-preview {
+  height: 400px !important;
+  width: 400px !important;
+}
+
+.xzoom-preview img {
+  height: 100% !important;
+  width: 100% !important;
 }
 
 /* Lens */
 .xzoom-lens {
   border: 1px solid #555;
-  box-shadow: -0px -0px 10px rgba(0,0,0,0.50);
+  box-shadow: -0px -0px 10px rgba(0, 0, 0, 0.50);
   cursor: crosshair;
 }
 
