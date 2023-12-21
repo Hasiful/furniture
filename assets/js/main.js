@@ -97,9 +97,11 @@
       dots: true,
       pauseOnHover: true,
       arrows: true,
+      lazyLoad: 'progressive',
       prevArrow: '<button type="button" class="slick-prev"><i class="las la-angle-left"></i></button>',
       nextArrow: '<button type="button" class="slick-next"><i class="las la-angle-right"></i></button>',
-    });
+    }).slickAnimation();
+
     // ========================= Slick Slider Js End ===================
 
     // ========================= Client Slider Js Start ===============
@@ -291,5 +293,14 @@
     }, '300');
   });
   //========================= Scroll To Top Icon Js End ======================
+
+  $('.header-toggle').click(function () {
+    $('.header_nav').toggleClass('active');
+  });
+
+  // Remove active class on header_nav when cross-btn is clicked
+  $('.cross_btn').click(function () {
+    $('.header_nav').removeClass('active');
+  });
 
 })(jQuery);

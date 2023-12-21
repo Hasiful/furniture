@@ -38,14 +38,10 @@
 
 .browse-home-wrapper {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 24px;
 
     @include md-screen {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    @include sm-screen {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -58,26 +54,6 @@
     position: relative;
     border-radius: 12px;
     overflow: hidden;
-
-    &:first-child {
-        grid-column: span 2;
-        grid-row: span 1;
-
-        @include md-screen {
-            grid-column: span 1;
-            grid-row: span 1;
-        }
-    }
-
-    &:last-child {
-        grid-column: span 2;
-        grid-row: span 1;
-
-        @include md-screen {
-            grid-column: span 1;
-            grid-row: span 1;
-        }
-    }
 
     &__thumbs {
         height: 100%;
@@ -92,16 +68,15 @@
 
     &__title {
         position: absolute;
-        padding: 20px;
-        bottom: 1px;
+        padding: 10px 20px;
+        bottom: 15px;
         font-size: 20px;
         left: 0px;
         margin: 0;
         height: auto;
         width: 100%;
         text-align: center;
-        background: linear-gradient(to left, rgb(0 0 0 / 10%), rgb(0 0 0 / 10%));
-        box-shadow: 0px 5px 30px rgb(0 0 0 / 10%);
+        background-color: rgb(118 146 60 / 50%);
 
         a {
             color: var(--white);

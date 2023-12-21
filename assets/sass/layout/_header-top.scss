@@ -4,21 +4,70 @@
     position: relative;
     z-index: 9;
 
-    &__right{
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        .icon{
-            font-size: 24px;
-            cursor: pointer;
-            display: flex;
-            color: var(--dark);
+    
+}
+
+.top_nav{
+    margin-bottom: 24px;
+
+    
+    @include msm-screen{
+        margin-bottom: 12px;
+    }
+}
+
+.top_nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+
+    @include msm-screen{
+        gap: 8px;
+    }
+}
+
+.top_nav ul a{
+    color: var(--dark);
+    font-size: 14px;
+    
+}
+.top_nav ul span{
+    color: var(--dark);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.top-contact{
+    text-align: right;
+
+    li{
+        a{
+            font-size: clampCal(18,28);
+            color: var(--black);
+        }
+
+        strong{
+            font-size: clampCal(22,32);
         }
     }
+}
 
+
+.header-contact{
+    .icon{
+        font-size: 24px;
+        cursor: pointer;
+        display: flex;
+        color: var(--dark);
+    }
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
     .wishlist{
         position: relative;
-
+    
         &__count{
             position: absolute;
             height: 16px;
@@ -161,7 +210,7 @@
             text-align: left;
             @extend .fs-15;
             border-radius: 5px;
-
+            display: flex;
             &.active {
                 background-color: var(--base);
             }
@@ -197,8 +246,13 @@
     justify-content: space-between;
     align-items: center;
 
-    @include md-screen {
-        justify-content: center;
+    @include msm-screen {
+        justify-content: flex-start;
+        flex-direction: column;
+
+        .top-contact{
+            text-align: center;
+        }
     }
 }
 
