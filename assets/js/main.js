@@ -49,100 +49,6 @@
     });
     // =============== Password Show Hide Js End =================
 
-    // ========================= Slick Slider Js Start ==============
-    $('.testimonial-slider').slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      speed: 1500,
-      dots: true,
-      pauseOnHover: true,
-      arrows: false,
-      prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-long-arrow-alt-left"></i></button>',
-      nextArrow: '<button type="button" class="slick-next"><i class="fas fa-long-arrow-alt-right"></i></button>',
-      responsive: [{
-          breakpoint: 1199,
-          settings: {
-            arrows: false,
-            slidesToShow: 2,
-            dots: true,
-          }
-        },
-        {
-          breakpoint: 991,
-          settings: {
-            arrows: false,
-            slidesToShow: 2
-          }
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            arrows: false,
-            slidesToShow: 1
-          }
-        }
-      ]
-    });
-
-    // banner slider
-
-    $('.banner-slider').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      speed: 1500,
-      dots: true,
-      pauseOnHover: true,
-      arrows: true,
-      lazyLoad: 'progressive',
-      prevArrow: '<button type="button" class="slick-prev"><i class="las la-angle-left"></i></button>',
-      nextArrow: '<button type="button" class="slick-next"><i class="las la-angle-right"></i></button>',
-    }).slickAnimation();
-
-    // ========================= Slick Slider Js End ===================
-
-    // ========================= Client Slider Js Start ===============
-    $('.feature-category-wrapper').slick({
-      slidesToShow: 6,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 1000,
-      pauseOnHover: true,
-      speed: 2000,
-      dots: true,
-      arrows: false,
-      prevArrow: '<button type="button" class="slick-prev"><i class="las la-angle-left"></i></button>',
-      nextArrow: '<button type="button" class="slick-next"><i class="las la-angle-right"></i></button>',
-      responsive: [{
-          breakpoint: 1199,
-          settings: {
-            slidesToShow: 6,
-          }
-        },
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 4
-          }
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 3
-          }
-        },
-        {
-          breakpoint: 400,
-          settings: {
-            slidesToShow: 1
-          }
-        }
-      ]
-    });
-    // ========================= Client Slider Js End ===================
 
     // ================== Sidebar Menu Js Start ===============
     // Sidebar Dropdown Menu Start
@@ -304,3 +210,124 @@
   });
 
 })(jQuery);
+
+
+// ========================= Slick Slider Js Start ==============
+$('.testimonial-slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  speed: 1500,
+  dots: true,
+  pauseOnHover: true,
+  arrows: false,
+  prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-long-arrow-alt-left"></i></button>',
+  nextArrow: '<button type="button" class="slick-next"><i class="fas fa-long-arrow-alt-right"></i></button>',
+  responsive: [{
+    breakpoint: 1199,
+    settings: {
+      arrows: false,
+      slidesToShow: 2,
+      dots: true,
+    }
+  },
+  {
+    breakpoint: 991,
+    settings: {
+      arrows: false,
+      slidesToShow: 2
+    }
+  },
+  {
+    breakpoint: 767,
+    settings: {
+      arrows: false,
+      slidesToShow: 1
+    }
+  }
+  ]
+});
+
+
+
+// ========================= Slick Slider Js End ===================
+
+// ========================= Client Slider Js Start ===============
+$('.feature-category-wrapper').slick({
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 1000,
+  pauseOnHover: true,
+  speed: 2000,
+  dots: true,
+  arrows: false,
+  prevArrow: '<button type="button" class="slick-prev"><i class="las la-angle-left"></i></button>',
+  nextArrow: '<button type="button" class="slick-next"><i class="las la-angle-right"></i></button>',
+  responsive: [{
+    breakpoint: 1199,
+    settings: {
+      slidesToShow: 6,
+    }
+  },
+  {
+    breakpoint: 991,
+    settings: {
+      slidesToShow: 4
+    }
+  },
+  {
+    breakpoint: 767,
+    settings: {
+      slidesToShow: 3
+    }
+  },
+  {
+    breakpoint: 400,
+    settings: {
+      slidesToShow: 1
+    }
+  }
+  ]
+});
+
+// ========================= Client Slider Js Start ===============
+$('.related_product_slider').slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 1000,
+  pauseOnHover: true,
+  speed: 2000,
+  dots: true,
+  arrows: false,
+  prevArrow: '<button type="button" class="slick-prev"><i class="las la-angle-left"></i></button>',
+  nextArrow: '<button type="button" class="slick-next"><i class="las la-angle-right"></i></button>',
+  responsive: [{
+    breakpoint: 1199,
+    settings: {
+      slidesToShow: 4,
+    }
+  },
+  {
+    breakpoint: 991,
+    settings: {
+      slidesToShow: 3
+    }
+  },
+  {
+    breakpoint: 767,
+    settings: {
+      slidesToShow: 2
+    }
+  },
+  {
+    breakpoint: 400,
+    settings: {
+      slidesToShow: 1
+    }
+  }
+  ]
+});
+// ========================= Client Slider Js End ===================

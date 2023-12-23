@@ -13,37 +13,28 @@
     <link rel="shortcut icon" href="assets/images/logo/favicon.png">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- Fontawesome -->
+    <!-- Font awesome -->
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <!-- Slick -->
     <link rel="stylesheet" href="assets/css/slick.css">
     <!-- line awesome -->
     <link rel="stylesheet" href="assets/css/line-awesome.min.css">
     <!-- Odometer -->
-    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="assets/css/magnificpopup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <!-- Main css -->
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
-
-    <!--==================== Preloader Start ====================-->
+    <!-- Preloader -->
     <div class="preloader">
         <div class="loader-p"></div>
     </div>
-    <!--==================== Preloader End ====================-->
-
-    <!--==================== Overlay Start ====================-->
-    <div class="body-overlay"></div>
-    <!--==================== Overlay End ====================-->
-
-    <!--==================== Sidebar Overlay End ====================-->
-    <div class="sidebar-overlay"></div>
-    <!--==================== Sidebar Overlay End ====================-->
-
-    <!-- ==================== Scroll to Top End Here ==================== -->
+    <!-- scroll top -->
     <a class="scroll-top"><i class="fas fa-angle-double-up"></i></a>
-    <!-- ==================== Scroll to Top End Here ==================== -->
+
     <!-- header top -->
     <div class="header-top">
         <div class="container">
@@ -167,97 +158,138 @@
         </div>
     </header>
 
-    <!-- ==================== Breadcrumb Start Here ==================== -->
-    <section class="breadcrumb py-120">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="breadcrumb__wrapper">
-                        <h2 class="breadcrumb__title"> Log in</h2>
-                        <ul class="breadcrumb__list">
-                            <li class="breadcrumb__item"><a href="index.html" class="breadcrumb__link"> <i
-                                        class="las la-home"></i> Home</a> </li>
-                            <li class="breadcrumb__item"><i class="fas fa-arrow-right"></i></li>
-                            <li class="breadcrumb__item"> <span class="breadcrumb__item-text"> Log in </span> </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ==================== Breadcrumb End Here ==================== -->
-    <!-- ================================= Account Section Start Here ============================ -->
-    <section class="account py-120">
-        <div class="account-inner">
-            <div class="container">
-                <div class="row gy-4 flex-wrap-reverse">
-                    <div class="col-lg-6 d-lg-block d-none">
-                        <div class="account-thumb">
-                            <img src="assets/images/thumbs/account-register.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="account-form">
-                            <div class="account-form__content mb-4">
-                                <h3 class="account-form__title mb-2"> Sign In Your Account </h3>
-                                <p class="account-form__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    ipsam labore dolore sunt laudantium aperiam.</p>
-                            </div>
-                            <form action="#" method="POST">
-                                <div class="row">
-                                    <div class="col-sm-12 form-group">
-                                        <label for="email" class="form--label">Email Address</label>
-                                        <input type="text" class="form--control" id="email">
-                                    </div>
-                                    <div class="col-sm-12 form-group">
-                                        <label for="your-password" class="form--label">Password</label>
-                                        <div class="position-relative">
-                                            <input id="your-password" type="password" class="form-control form--control"
-                                                value="Password">
-                                            <span class="password-show-hide fas fa-eye toggle-password fa-eye-slash"
-                                                id="#your-password"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 form-group">
-                                        <div class="d-flex flex-wrap justify-content-between">
-                                            <div class="form--check">
-                                                <input class="form-check-input" type="checkbox" value="" id="remember">
-                                                <label class="form-check-label" for="remember">Remember me </label>
-                                            </div>
-                                            <a href="#" class="forgot-password text--base">Forgot Your Password?</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 form-group">
-                                        <button type="submit" class="btn btn--base w-100">Sign In</button>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <div class="have-account text-center">
-                                            <p class="have-account__text">Don't Have An Account? <a
-                                                    href="registration.html"
-                                                    class="have-account__link text--base">Create Account</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ================================= Account Section End Here ============================ -->
-    <!-- Footer -->
 
-    <!-- ==================== Footer Start Here ==================== -->
+    <section class="user_dashboard py-120">
+        <div class="container">
+            <!-- tab wrapper -->
+            <div class="user_dashboard_wrapper">
+                <!-- nav -->
+                <div class="user_dashboard_nav">
+                    <!-- nav list -->
+                    <ul class="user_dashboard_list">
+                        <li class="user_dashboard_item">
+                            <a href="./userpanel.html" class="user_dashboard_link active">
+                                <span><i class="fab fa-microsoft"></i></span>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li class="user_dashboard_item">
+                            <a href="./orders.html" class="user_dashboard_link">
+                                <span><i class="fa-sharp fa-solid fa-bag-shopping"></i></span>
+                                <span>Orders</span>
+                            </a>
+                        </li>
+                        <li class="user_dashboard_item">
+                            <a href="./wishlist.html" class="user_dashboard_link">
+                                <span><i class="fa-solid fa-heart"></i></span>
+                                <span>Wish List</span>
+                            </a>
+                        </li>
+                        <li class="user_dashboard_item">
+                            <a href="./profile.html" class="user_dashboard_link">
+                                <span><i class="fa-solid fa-user"></i></span>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+                        <li class="user_dashboard_item">
+                            <a href="./address.html" class="user_dashboard_link">
+                                <span><i class="fa-sharp fa-solid fa-address-book"></i></span>
+                                <span>Shipping Address</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- content -->
+                <div class="user_dashboard_content">
+                    <!-- heading -->
+                    <div class="user_dashboard_header">
+                        <h3 class="user_dashboard_title">Dashboard</h3>
+                    </div>
+                    <!-- user_dashboard_body -->
+                    <div class="user_dashboard_body">
+                        <!-- wrapper- -->
+                        <div class="dashboard_info_wrapper">
+                            <!-- item -->
+                            <div class="dashboard_info_item">
+                                <!-- icon -->
+                                <div class="dashboar_info_icon">
+                                    <span><i class="fa-solid fa-cube"></i></span>
+                                </div>
+                                <!-- title -->
+                                <h2 class="dashboar_info_title">Total Orders</h2>
+                                <!-- count -->
+                                <p class="dashboar_info_count">5</p>
+                            </div>
+                            <!-- item -->
+                            <div class="dashboard_info_item">
+                                <!-- icon -->
+                                <div class="dashboar_info_icon">
+                                    <span><i class="fa-solid fa-spinner"></i></span>
+                                </div>
+                                <!-- title -->
+                                <h2 class="dashboar_info_title">Pending Orders</h2>
+                                <!-- count -->
+                                <p class="dashboar_info_count">0</p>
+                            </div>
+                            <!-- item -->
+                            <div class="dashboard_info_item">
+                                <!-- icon -->
+                                <div class="dashboar_info_icon">
+                                    <span><i class="fa-solid fa-badge-check"></i></span>
+                                </div>
+                                <!-- title -->
+                                <h2 class="dashboar_info_title">Complete Orders</h2>
+                                <!-- count -->
+                                <p class="dashboar_info_count">3</p>
+                            </div>
+                            <!-- item -->
+                            <div class="dashboard_info_item">
+                                <!-- icon -->
+                                <div class="dashboar_info_icon">
+                                    <span><i class="fa-solid fa-xmark"></i></span>
+                                </div>
+                                <!-- title -->
+                                <h2 class="dashboar_info_title">Cancel Orders</h2>
+                                <!-- count -->
+                                <p class="dashboar_info_count">2</p>
+                            </div>
+                        </div>
+                        <!-- dashbard sidemap -->
+                        <div class="dahsboard_sidemap">
+                            <div class="dashbard_sidemap_wrapper">
+                                <!-- item -->
+                                <a href="" class="dashbard_sidemap_item">
+                                    <div class="sidemap_icon"><i class="fa-solid fa-heart"></i></div>
+                                    <h4 class="sidemap_title">Wish List</h4>
+                                </a>
+
+                                <!-- item -->
+                                <a href="" class="dashbard_sidemap_item">
+                                    <div class="sidemap_icon"><i class="fa-sharp fa-solid fa-bag-shopping"></i></div>
+                                    <h4 class="sidemap_title">Orders</h4>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
     <footer class="footer-area">
-        <div class="pb-60 pt-120">
+        <div class="py-60">
             <div class="container">
                 <div class="row justify-content-center gy-5">
+                    <div class="col-12">
+                        <div class="footer-item__logo">
+                            <a href="index.html"> <img src="assets/images/logo/logo.png" alt=""></a>
+                        </div>
+                    </div>
                     <div class="col-xl-4 col-sm-6 col-xsm-6">
                         <div class="footer-item">
-                            <div class="footer-item__logo">
-                                <a href="index.html"> <img src="assets/images/logo/logo.png" alt=""></a>
-                            </div>
                             <p class="footer-item__desc"> Herbal Shop brings you tons of products in over 20+ different
                                 categories, including men's fashion, women's fashion, baby fashion, and more. </p>
                             <ul class="social-list">
@@ -344,7 +376,6 @@
             </div>
         </div>
     </footer>
-    <!-- ==================== Footer End Here ==================== -->
 
     <!-- Jquery js -->
     <script src="assets/js/jquery-3.6.3.min.js"></script>
@@ -353,10 +384,11 @@
     <!-- Slick js -->
     <script src="assets/js/slick.min.js"></script>
     <!-- Odometer js -->
-    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/magnific.min.js"></script>
     <!-- Viewport js -->
     <script src="assets/js/viewport.jquery.js"></script>
-
+    <!-- animate -->
+    <script src="https://alexandrebuffet.fr/codepen/slider/slick-animation.min.js"></script>
     <!-- main js -->
     <script src="assets/js/main.js"></script>
 </body>

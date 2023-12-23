@@ -692,9 +692,27 @@
     <script src="assets/js/magnific.min.js"></script>
     <!-- Viewport js -->
     <script src="assets/js/viewport.jquery.js"></script>
+    <!-- animate -->
     <script src="https://alexandrebuffet.fr/codepen/slider/slick-animation.min.js"></script>
     <!-- main js -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+        // banner slider
+        $('.banner-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            speed: 1500,
+            dots: true,
+            pauseOnHover: true,
+            arrows: true,
+            lazyLoad: 'progressive',
+            prevArrow: '<button type="button" class="slick-prev"><i class="las la-angle-left"></i></button>',
+            nextArrow: '<button type="button" class="slick-next"><i class="las la-angle-right"></i></button>',
+        }).slickAnimation();
+    </script>
 </body>
 
 </html>
